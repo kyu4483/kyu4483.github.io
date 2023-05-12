@@ -7,10 +7,60 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="intro.css" />
   </head>
+
+  <script>
+    function changeText() {
+      const element = document.getElementById('textChange');
+      element.textContent = '" Java "';
+
+      setTimeout(changeTextBack, 3000); // 3000ms(3초) 후에 changeTextBack 함수 호출
+    }
+
+    function changeTextBack() {
+      const element = document.getElementById('textChange');
+      element.textContent = '" JavaScript "';
+
+      setTimeout(changeTextSpring, 3000); // 3000ms(3초) 후에 changeTextSpring 함수 호출
+    }
+
+    function changeTextSpring() {
+      const element = document.getElementById('textChange');
+      element.textContent = '" Spring "';
+
+      setTimeout(changeTextDB, 3000); // 3000ms(3초) 후에 changeText 함수 호출
+    }
+
+    function changeTextDB() {
+      const element = document.getElementById('textChange');
+      element.textContent = '" DataBase "';
+
+      setTimeout(changeTextGit, 3000); // 3000ms(3초) 후에 changeText 함수 호출
+    }
+
+    function changeTextGit() {
+      const element = document.getElementById('textChange');
+      element.textContent = '" GitHub "';
+
+      setTimeout(changeTextCording, 3000); // 3000ms(3초) 후에 changeText 함수 호출
+    }
+
+    function changeTextCording() {
+      const element = document.getElementById('textChange');
+      element.textContent = '" Cording "';
+
+      setTimeout(changeText, 3000); // 3000ms(3초) 후에 changeText 함수 호출
+    }
+
+    window.onload = function () {
+      setTimeout(changeText, 3000); // 3000ms(3초) 후에 changeText 함수 호출
+    };
+  </script>
+
   <body>
     <div id="intro" class="intro">
-      <h1>안녕하세요!</h1>
-      <p>신입 개발자 김규서입니다.</p>
+      <h1>Hello Would!</h1>
+      <h3 id="textChange">" Cording "</h3>
+      <h3>알려줘서 고마워</h3>
     </div>
 
     <header>
@@ -76,7 +126,9 @@
             팀원과의 의견이 안맞는 부분은 조금씩 서로 양보하여 상대방의 의견을
             존중을 더 해주며 프로젝트를 마무리 했습니다.
           </p>
+          <div class="profile"></div>
         </section>
+        <hr />
         <section id="skill">
           <h2>My Skills</h2>
           <div class="img">
@@ -214,6 +266,7 @@
             </svg>
           </div>
         </section>
+        <hr />
         <section id="projects">
           <h2>My Projects</h2>
           <ul>
@@ -224,15 +277,34 @@
             <br />
             <li>
               <h3>프로젝트 내용</h3>
-              <h4>야기요 프로젝트 시연영상</h4>
+              <br />
               <div class="video-wrapper">
                 <video controls>
                   <source src="video/야기요 시연영상.mp4" type="video/mp4" />
                   <p><a href="video/야기요 시연영상.mp4"></a></p>
                 </video>
               </div>
-              <h4>야기요 프로젝트 PPT</h4>
-              <source src="ppt/3팀.pdf" />
+              <div class="yagiyo">
+                <a
+                  href="https://github.com/kyu4483/kyu4483.github.io/blob/main/ppt/3%ED%8C%80.pdf"
+                >
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHSRagyEiJ_F3B6ZGYC7S6F5KVfYYeChKNEw&usqp=CAU"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="https://github.com/kyu4483/kyu4483.github.io.git"
+                  style="width: 225px"
+                >
+                  <img
+                    height="225px"
+                    width="225px"
+                    src="https://images.velog.io/images/rssungjae/post/50269455-d756-4830-9872-a9ac374a8130/image.png"
+                    alt=""
+                  />
+                </a>
+              </div>
             </li>
           </ul>
         </section>

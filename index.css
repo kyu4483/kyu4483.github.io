@@ -38,6 +38,10 @@ header {
   transition: color 0.5s;
 }
 
+.menu a:active {
+  color: black;
+}
+
 nav ul {
   list-style: none;
   margin: 0;
@@ -64,7 +68,6 @@ main {
   display: grid;
   grid-area: a2;
   padding: 50px;
-  border: #777 1px solid;
   margin-bottom: 50px;
 }
 
@@ -78,7 +81,7 @@ main {
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 #about p {
@@ -92,8 +95,8 @@ main {
   display: grid;
   grid-area: b2;
   padding: 50px;
-  border: #777 1px solid;
   margin-bottom: 50px;
+  justify-items: center;
 }
 .img {
   display: grid;
@@ -128,11 +131,15 @@ li p {
 }
 
 #projects {
+  justify-items: center;
   display: grid;
   grid-area: c2;
   padding: 50px;
-  border: #777 1px solid;
   margin-bottom: 50px;
+}
+
+#projects img {
+  margin-bottom: 20px;
 }
 
 .video-wrapper {
@@ -144,6 +151,12 @@ li p {
 .video-wrapper video {
   width: 40vw;
   height: auto;
+}
+
+.yagiyo {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
 }
 
 /* 푸터 스타일 */

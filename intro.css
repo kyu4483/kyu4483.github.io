@@ -1,42 +1,48 @@
 @charset "UTF-8";
 
 .intro {
-    background-image: url("http://jinicare.co.kr/data/editor/1701/042c45dc8505c5552079bcd1e2b3e028_1483982357_54.gif");
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    text-align: center;
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+  background-image: url('https://t1.daumcdn.net/news/202105/25/techplus/20210525035305791rwzg.gif');
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .intro:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.2) 60%,rgba(255,255,255,0.5) 100%), url("http://jinicare.co.kr/data/editor/1701/042c45dc8505c5552079bcd1e2b3e028_1483982357_54.gif") no-repeat center center fixed;
-    background-size: 100vh;
-    z-index: -1;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.2) 60%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    url('http://jinicare.co.kr/data/editor/1701/042c45dc8505c5552079bcd1e2b3e028_1483982357_54.gif')
+      no-repeat center center fixed;
+  background-size: 100vh;
+  z-index: -1;
 }
 
 .intro h1 {
-    font-size: 5rem;
-    margin-bottom: 1rem;
+  font-size: 5rem;
+  margin-bottom: 1rem;
 }
 
 .intro p {
-    font-size: 1.5rem;
-    margin-bottom: 3rem;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
 }
-
